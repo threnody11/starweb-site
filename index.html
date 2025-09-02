@@ -1,6 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>StarWeb</title></head>
-<body><h1>Welcome to StarWeb</h1><p>Your site is live!</p></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StarWeb</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">⭐ StarWeb</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Welcome to StarWeb</h2>
+    <p>Your digital presence, elevated to the stars.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <section id="features">
+    <h2>What We Offer</h2>
+    <div class="cards">
+      <div class="card"><h3>🚀 Performance</h3><p>Fast and optimized websites.</p></div>
+      <div class="card"><h3>🎨 Design</h3><p>Responsive and sleek UI.</p></div>
+      <div class="card"><h3>🔒 Security</h3><p>Secure and reliable code.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formMessage" class="hidden">Message sent! We’ll be in touch.</p>
+    </form>
+  </section>
+
+  <footer><p>&copy; 2025 StarWeb</p></footer>
+  <script src="script.js"></script>
+</body>
 </html>
